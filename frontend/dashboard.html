@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Behavioral Study | Search Task</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container card">
+    <p class="eyebrow">Task 2 of 2</p>
+    <h1>Search Task</h1>
+    <p class="muted">Type a short search phrase and submit it. The query text is stored for research labeling.</p>
+
+    <form id="searchForm" autocomplete="off">
+      <label for="searchBox">Search phrase</label>
+      <input type="text" id="searchBox" name="searchBox" placeholder="example: browser automation" required />
+      <button class="primary" type="submit">Search</button>
+    </form>
+
+    <section id="results" class="results" hidden>
+      <h2>Demo results</h2>
+      <p>This is a simulated task result page. Your interaction sequence has been recorded anonymously.</p>
+    </section>
+
+    <button id="finishBtn" class="secondary">Finish Session</button>
+    <p id="status" class="status" aria-live="polite"></p>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

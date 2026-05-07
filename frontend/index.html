@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Behavioral Study | Consent</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container card">
+    <p class="eyebrow">Research data collection</p>
+    <h1>Behavioral Study</h1>
+    <p>
+      This demo collects anonymized interaction data such as mouse movement,
+      clicks, typing timing, page visits, and task actions for bot-detection research.
+    </p>
+
+    <section class="notice">
+      <h2>Consent and privacy</h2>
+      <ul>
+        <li>No real password is stored.</li>
+        <li>No personal identity is required.</li>
+        <li>A random session ID is used for research analysis.</li>
+        <li>You can close the page at any time to stop participating.</li>
+      </ul>
+    </section>
+
+    <label class="consent-row">
+      <input id="consentCheck" type="checkbox" />
+      <span>I understand and consent to anonymized behavioral data collection.</span>
+    </label>
+
+    <button id="startBtn" class="primary" disabled>Start Study</button>
+    <p id="status" class="status" aria-live="polite"></p>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

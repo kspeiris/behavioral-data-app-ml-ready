@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Behavioral Study | Login Task</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container card">
+    <p class="eyebrow">Task 1 of 2</p>
+    <h1>Login Task</h1>
+    <p class="muted">Use any dummy username and password. Do not enter a real password.</p>
+
+    <form id="loginForm" autocomplete="off">
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" placeholder="demo_user" required />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="dummy password only" required />
+
+      <button class="primary" type="submit">Continue</button>
+    </form>
+
+    <p id="status" class="status" aria-live="polite"></p>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
